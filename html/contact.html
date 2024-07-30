@@ -50,8 +50,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 
     <!-- owl-carousel css -->
-    <link rel="stylesheet" href="js/owl-carousel/assets/owl.carousel.min.css" />
-    <link rel="stylesheet" href="js/owl-carousel/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="./../js/owl-carousel/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./../js/owl-carousel/assets/owl.theme.default.min.css" />
 
     <!-- style.css -->
     <link rel="stylesheet" href="./../css/contact.css" />
@@ -105,6 +105,15 @@
                 <a href="#search" class="text-color">
                   <i class="fa fa-search"></i>
                 </a>
+                <div class="search-popup" id="search">
+                  <div class="popup">
+                    <form action="" method="GET" class="d-sm-flex">
+                      <input type="search" placeholder="Enter Keyword" required>
+                      <button>Search</button>
+                    </form>
+                    <a href="#close" class="close">x</a>
+                  </div>
+                </div>
               </div>
               <div>
                 <button class="primary-button-light">Schedule a demo</button>
