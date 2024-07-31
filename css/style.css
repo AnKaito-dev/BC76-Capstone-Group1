@@ -892,6 +892,36 @@
   text-align: center;
 }
 
+.back_to_top {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  background-color: #dc4f72;
+  width: 50px;
+  height: 45px;
+  color: white;
+  border-radius: 3px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .5s;
+}
+
+.back_to_top:hover {
+  opacity: 1;
+}
+
+.back_to_top i {
+  position: absolute;
+  line-height: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* back-to-top button visible */
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: .7;
+}
 
 
 @media screen and (min-width: 992px) {
