@@ -150,7 +150,7 @@
 
 .nav-search .search-popup .popup .close {
   position: absolute;
-  right: 30px;
+  right: 15px;
   top: -50px;
   transition: all 200ms;
   font-size: 30px;
@@ -234,6 +234,36 @@
   width: 20px;
 }
 
+.navbar-toggler {
+  background-color: #dc4f72;
+  color: white;
+  padding: 5px 11px;
+}
+
+.navbar-toggler.collapsed {
+  padding: 5px 8px;
+}
+
+.navbar-toggler .toggler-icon {
+  font-size: 24px;
+}
+
+.navbar-toggler .icon-close {
+  display: block;
+}
+
+.navbar-toggler .icon-expand {
+  display: none;
+}
+
+.navbar-toggler.collapsed .icon-close {
+  display: none;
+}
+
+.navbar-toggler.collapsed .icon-expand {
+  display: block;
+}
+
 /* dropdown-menu css */
 .dropdown-nav {
   position: relative;
@@ -249,7 +279,7 @@
 }
 
 .dropdown-menu {
-  transform: translateX(-50px);
+  transform: translateX(-65px);
   padding-top: 16px;
   border-radius: 6px;
   min-width: 11rem;
@@ -305,6 +335,39 @@
 
 .dropdown-menu .dropdown-item:hover::before {
   width: 20px;
+}
+
+/* banner css */
+.banner {
+  margin-top: 90px;
+}
+
+.banner .banner_content {
+  position: relative;
+  background: linear-gradient(to right, white, rgba(255, 255, 255, 0.92)), url(./../img/banner.jpg);
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: grid;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.banner_title h3 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.banner_title p {
+  font-size: 20px;
+  font-weight: 400;
+  max-width: 450px;
+}
+
+.banner_title button {
+  padding: 15px 30px;
 }
 
 /* chooseUs css */
@@ -454,6 +517,114 @@
 
 .cover_content button:hover {
   background-color: #e2e6ea;
+}
+
+/* question css */
+.question {
+  background-color: #F7F9FC;
+}
+
+.question_title h3 {
+  margin: 0;
+}
+
+.question_content .content_image img {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transition: all .5s;
+  transform: translateY(0);
+}
+
+.question_content .content_image img:hover {
+  transform: translateY(-10px);
+}
+
+.question_content .content_info {
+  padding-left: 36px;
+}
+
+.question_content .content_info ul {
+  list-style: none;
+  padding: 0;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.question_content .content_info ul li {
+  position: relative;
+  padding: 25px 50px 25px 20px;
+  border: 1px solid #eee;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  background: white;
+}
+
+.question_content .content_info li input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.question_content .content_info li input:checked ~ p {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  transform: translate(0, 50%);
+}
+
+.question_content .content_info li input:checked ~ i::before {
+  transform: translate(2px, 0) rotate(45deg);
+}
+
+.question_content .content_info li input:checked ~ i::after {
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+
+.question_content .content_info li i {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 16px;
+  right: 25px;
+  top: 16px;
+}
+
+.question_content .content_info li i::before {
+  transform: translate(-2px, 0) rotate(45deg);
+}
+
+.question_content .content_info li i::after {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+
+.question_content .content_info li i::before, .question_content .content_info li i::after {
+  content: "";
+  position: absolute;
+  background-color: #2C3038;
+  width: 3px;
+  height: 9px;
+}
+
+.question_content .content_info h2 {
+  font-size: 20px;
+  display: block;
+  margin: 0;
+  cursor: pointer;
+}
+
+.question_content .content_info p {
+  position: relative;
+  overflow: hidden;
+  max-height: 800px;
+  opacity: 1;
+  transform: translate(0, 0);
+  margin-top: 14px;
+  margin-bottom: auto;
+  transition: all .2s;
 }
 
 /* project css */
@@ -759,8 +930,23 @@
   .navbar {
     text-align: center;
   }
+  .nav-search, .theme-mode {
+    display: inline-block;
+    align-items: center;
+    margin: 15px 0;
+  }
+  .navbar-nav .dropdown-menu {
+    transform: translateX(0px);
+  }
+  .navbar-nav .dropdown-item {
+    text-align: center;
+  }
   .testimonial_item .item_info {
     padding: 32px;
+  }
+  .footer_end {
+    display: block !important;
+    text-align: center;
   }
 }
 
@@ -786,6 +972,12 @@
     padding: 0;
   }
   .about_info {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .question_content .content_info {
     padding: 0;
   }
 }
