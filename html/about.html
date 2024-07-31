@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en" class="js">
+
+<head>
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+
+  <title>Capstone - Group1</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Font Nunito -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet" />
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+  <!-- css.gg -->
+  <link href="https://css.gg/css" rel="stylesheet" />
+  <!-- UNPKG -->
+  <link href="https://unpkg.com/css.gg/icons/icons.css" rel="stylesheet" />
+  <!-- JSDelivr -->
+  <link href="https://cdn.jsdelivr.net/npm/css.gg/icons/icons.css" rel="stylesheet" />
+
+  <!-- FontAwesome 6.2.0 CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Line Awesome -->
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- flaticon.css -->
+  <link rel="stylesheet" href="./../css/flaticon/flaticon.css" />
+
+  <!-- fancybox css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+  <!-- owl-carousel css -->
+  <link rel="stylesheet" href="./../js/owl-carousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="./../js/owl-carousel/assets/owl.theme.default.min.css">
+
+  <!-- style.css -->
+  <link rel="stylesheet" href="./../css/about_services.css" />
+</head>
+
+<body>
+  <header class="main-header fixed-top" id="header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand primary-color fw-bold" href="./../index.html">
+            <i class="fa-regular fa-handshake"></i>
+            <span>Masterwork</span>
+          </a>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="toggler-icon fa icon-expand fa-bars"></i>
+            <i class="toggler-icon fa icon-close fa-times"></i>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./service.html">Services</a>
+              </li>
+              <li class="nav-item dropdown-nav">
+                <a class="nav-link" href="#pages" data-toggle="dropdown" aria-expanded="true" aria-haspopup="true"">Pages</a>
+                <div class="dropdown-menu" id="dropdown">
+                  <a class="dropdown-item" href="#blog-posts">Blog Posts</a>
+                  <a class="dropdown-item" href="#landing-page">Landing page</a>
+                  <a class="dropdown-item" href="#404-page">404 page</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+            <div class="nav-search light-bg-color">
+              <a href="#search" class="text-color">
+                <i class="fa fa-search"></i>
+              </a>
+              <div class="search-popup" id="search">
+                <div class="popup">
+                  <form action="" method="GET" class="d-sm-flex">
+                    <input type="search" placeholder="Enter Keyword" required>
+                    <button>Search</button>
+                  </form>
+                  <a href="#close" class="close">x</a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <button class="primary-button-light">Schedule a demo</button>
+            </div>
+            <div class="theme-mode">
+              <i class="gg-moon"></i>
+              <!-- <i class="gg-sun"></i> -->
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section>
+    <div class="pt-5">
+      <div class=" about-container">
+        <div class="header-section mb-5 text-center">
+          <h2>About Us</h2>
+        </div>
+        <div class=" row gx-5">
+          <div class=" col-lg-6  text_head__1">
+            <h2>The Best Choice For Your Successful Business!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. </p>
+            <ul class="ul_head">
+              <li class="ul_li_head"><i class="fa-solid fa-check"></i>
+                Website Designing and Development</li>
+              <li class="ul_li_head"><i class="fa-solid fa-check"></i>
+                Android and iOs Apps Development </li>
+              <li class="ul_li_head"><i class="fa-solid fa-check"></i>
+                Successfully Providing Business Solution from 20 years</li>
+              <li class="ul_li_head"><i class="fa-solid fa-check"></i>
+                Excellence Records </li>
+            </ul>
+          </div>
+          <div class=" col-lg-6 pl-lg-5 mt-lg-0 mt-5">
+            <img src="./../img/b5.jpg" class="img_head img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="py-5">
+      <div class=" about-container">
+        <div class="row flex-wrap justify-content-center g-4">
+          <div class="col-lg-4 col-sm-6">
+            <div class="about_info">
+              <h4>Our History 1795</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="about_info">
+              <h4>The power of business </h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="about_info">
+              <h4>120 Customer service
+              </h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section style="background-color: #f7f9fc;">
+    <div class="py-5">
+      <div class=" about-container">
+        <div class="text-center">
+          <div class="sub_title">
+            FEATURES
+          </div>
+          <h1>The Largest Business Expert !
+          </h1>
+          <p class="my-3">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+            Curae; Nulla
+            mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.
+          </p>
+        </div>
+        <div class="row pt-4 justify-content-center gy-3 gx-3">
+          <div class="col-lg-3 col-sm-6">
+            <div class="box_item">
+              <div class="box_icon">
+                <span class="fa fa-laptop"></span>
+              </div>
+              <div class="box_title">Best Financial Advice</div>
+              <div class="box_description">
+                <p>Enean eget dolor dolor sit amet commodo ligula</p>
+                <a href="#url">
+                  Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="box_item">
+              <div class="box_icon">
+                <span class="fa-brands fa-grav"></span>
+              </div>
+              <div class="box_title">Authorised Finance Brand</div>
+              <div class="box_description">
+                <p>Enean eget dolor dolor sit amet commodo ligula</p>
+                <a href="#url">
+                  Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="box_item">
+              <div class="box_icon">
+                <span class="fa-regular fa-square-caret-up"></span>
+              </div>
+              <div class="box_title">Compehensive Advices </div>
+              <div class="box_description">
+                <p>Enean eget dolor dolor sit amet commodo ligula</p>
+                <a href="#url">
+                  Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="box_item">
+              <div class="box_icon">
+                <span class="fa fa-adjust"></span>
+              </div>
+              <div class="box_title">Monitoring & Review</div>
+              <div class="box_description">
+                <p>Enean eget dolor dolor sit amet commodo ligula</p>
+                <a href="#url">
+                  Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="py-5 mt-5">
+      <div class="text-center">
+        <div class="sub_title">
+          CREATIVE SOLUTIONS
+        </div>
+        <h1>Watch Our Two Minute Intro
+        </h1>
+        <p class="my-3 max-w-700"> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+          cubilia Curae;
+          Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam
+        </p>
+      </div>
+    </div>
+    <div class="video_info">
+      <div class="">
+        <img src="./../img/b9.jpg" class="img_head img-fluid" alt="">
+        <a href="https://www.youtube.com/watch?v=SDJUbYU3Pzc" data-fancybox="gallery" class="video_play__info">
+          <i class="fa-regular fa-2xl fa-shake fa-circle-play"></i>
+        </a>
+      </div>
+    </div>
+    <div class="mt-5 text-center">
+      <button class="btn_learn_more" style="background-color: #dc4f72;">
+        Request Quote
+      </button>
+    </div>
+  </section>
+  <section class="pb-5 pt-5">
+    <div class="container py-lg-3">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="owl-carousel owl-theme">
+            <div class="item item_owl">
+              <img src="./../img/logo1.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="item item_owl">
+              <img src="./../img/logo2.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="item item_owl">
+              <img src="./../img/logo3.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="item item_owl">
+              <img src="./../img/logo4.jpg" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class=" about-container" style="background-color: #f7f9fc;">
+    <div class="py-5 ">
+      <div class="text-center">
+        <div class="sub_title">
+          OUR TEAM MEMBERS
+        </div>
+        <h1>Our Creative Team
+        </h1>
+        <div class="my-3"> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+          Curae;
+          Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-3 col-sm-6 item mt-sm-5">
+          <div class="team_item">
+            <div class="team_img">
+              <img src="./../img/team1.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="team_info">
+              <h4>Gwen Johnson</h4>
+              <p>Founder & CEO </p>
+              <div class="team_social">
+                <a href="#url"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#url"><i class="fa-brands fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 item mt-sm-5">
+          <div class="team_item">
+            <div class="team_img">
+              <img src="./../img/team2.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="team_info">
+              <h4>Daniel Roberto</h4>
+              <p>Regional Manager</p>
+              <div class="team_social">
+                <a href="#url"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#url"><i class="fa-brands fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 item  mt-sm-5">
+          <div class="team_item">
+            <div class="team_img">
+              <img src="./../img/team3.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="team_info">
+              <h4>Dhony Abraham</h4>
+              <p>Managing Partner</p>
+              <div class="team_social">
+                <a href="#url"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#url"><i class="fa-brands fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 item mt-sm-5">
+          <div class="team_item">
+            <div class="team_img">
+              <img src="./../img/team4.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="team_info">
+              <h4>Marko Dugonji</h4>
+              <p>Cheif Executive</p>
+              <div class="team_social">
+                <a href="#url"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#url"><i class="fa-brands fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 item mt-sm-5">
+          <div class="team_item">
+            <div class="team_img">
+              <img src="./../img/team5.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="team_info">
+              <h4>Anthony</h4>
+              <p>Engineering Officer</p>
+              <div class="team_social">
+                <a href="#url"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#url"><i class="fa-brands fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 item mt-sm-5">
+          <div class="team_item">
+            <div class="team_img">
+              <img src="./../img/team6.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="team_info">
+              <h4>Emma Stone</h4>
+              <p>Team Leader</p>
+              <div class="team_social">
+                <a href="#url"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#url"><i class="fa-brands fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 item  mt-sm-5">
+          <div class="team_item">
+            <div class="team_img">
+              <img src="./../img/team7.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="team_info">
+              <h4>Rhoda Byrd</h4>
+              <p>Technology Officer</p>
+              <div class="team_social">
+                <a href="#url"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#url"><i class="fa-brands fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 item mt-sm-5">
+          <div class="team_item">
+            <div class="team_img">
+              <img src="./../img/team8.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="team_info">
+              <h4>Max Stoiber</h4>
+              <p>Manager
+              </p>
+              <div class="team_social">
+                <a href="#url"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#url"><i class="fa-brands fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class=" about-container py-5 ">
+    <div class="text-center">
+      <h1>Ready to build your own brand community?
+      </h1>
+      <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis
+        dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.
+      </p>
+      <div class="d-flex justify-content-center align-content-center gap-3">
+        <a class="btn_book">
+          BOOK A DEMO
+        </a>
+        <a class="btn_started">
+          GET STARTED
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class=" about-container  py-4 footer" style="background-color: #F7F9FC;">
+    <div class="row">
+      <div class="col-lg-6 column">
+        <div class="row">
+          <div class="col-md-4 column">
+            <div class=" item_footer">
+              <h4 class="">Meta</h4>
+              <ul>
+                <li><a href="#">Log in</a></li>
+                <li><a href="#">Entries feed</a></li>
+                <li><a href="#">Comments feed</a></li>
+                <li><a href="#">WordPress.org</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 column mt-md-0 mt-4">
+            <div class="item_footer">
+              <h4 class="">Categories</h4>
+              <ul>
+                <li class="cat-item cat-item-2"><a href="#">Business</a>
+                </li>
+                <li class="cat-item cat-item-3"><a href="#">Design</a>
+                </li>
+                <li class="cat-item cat-item-4"><a href="#">Industry</a>
+                </li>
+                <li class="cat-item cat-item-5"><a href="#">Programming</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 column mt-md-0 mt-4">
+            <div class="item_footer">
+              <h4 class="">Archives</h4>
+              <ul>
+                <li><a href="#">March 2021</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12column pl-lg-5 column4 mt-lg-0 mt-5  new_letter">
+        <h4 class="mb-4">Newsletter </h4>
+        <div class="new_letter_box">
+          <h4>Get latest updates and offers.</h4>
+          <form action="" class="subscribe" method="post">
+            <input type="email" name="email" placeholder="Email Address" required="">
+            <button type="submit" class="btn_learn_more">Go</button>
+          </form>
+          <p>Sign up for our latest news &amp; articles. We won’t give you spam mails.</p>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex below-section justify-content-between align-items-center pt-4 mt-5">
+      <div class="columns text-lg-left text-center">
+        <p class="CopyRights">© 2024 Masterwork. All Rights Reserved |
+          WordPress Theme by <a href="https://w3layouts.com/">W3Layouts. </a>
+        </p>
+      </div>
+      <div class="columns-2 mt-lg-0 mt-3 ">
+        <ul class="social d-flex gap-3">
+          <li><a href="https://www.facebook.com/w3layouts/">
+              <span class="fa-brands fa-facebook" aria-hidden="true"></span></a>
+          </li>
+          <li><a href="https://in.linkedin.com/company/w3layouts">
+              <span class="fa-brands fa-linkedin" aria-hidden="true"></span></a>
+          </li>
+          <li><a href="https://twitter.com/W3layouts">
+              <span class="fa-brands fa-twitter" aria-hidden="true"></span></a>
+          </li>
+          <li><a href="https://google.com/W3layouts">
+              <span class="fa-brands fa-google-plus" aria-hidden="true"></span></a>
+          </li>
+          <li><a href="https://github.com/W3layouts">
+              <span class="fa-brands fa-github" aria-hidden="true"></span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <a href="#header" class="back_to_top cd-top text-replace js-cd-top">
+    <i class="fa-solid fa-angle-up"></i>
+  </a>
+
+  <script src="assets/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+  <!-- Jquery Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"
+    integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- fancybox -->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script>
+    Fancybox.bind('[data-fancybox]');
+  </script>
+
+  <!-- back-to-top -->
+  <script src="./../js/back-to-top/assets/js/util.js"></script>
+  <script src="./../js/back-to-top/assets/js/main.js"></script>
+
+  <!-- count up -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+    integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./../js/count-up/jquery.countup.js"></script>
+  <script>
+    $('.counter').countUp({
+      delay: 10,
+      time: 3000,
+    });
+  </script>
+
+  <!-- wow -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    new WOW().init();
+  </script>
+
+  <!-- owl-carousel -->
+  <script src="./../js/owl-carousel/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        dots: false,
+        nav: false,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 2
+          },
+          1000: {
+            items: 3
+          }
+        }
+      });
+    });
+  </script>
+  <script>
+    // header fixed srcoll
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        $('.main-header').addClass('fixed-top');
+      } else {
+        $('.main-header').removeClass('fixed-top');
+      }
+    });
+  </script>
+
+</body>
+
+</html>
